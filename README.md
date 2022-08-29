@@ -17,7 +17,7 @@ What are the advantages of using component-based architecture?
 It is easier to replace existing versions of the architecture with no impact on other components, making deployment less of a hassle, as well as reduced cost via third-party components. It becomes reusable and easily can modify the complexity via use of component containers and its Services. It is independent and easier to maintain and evolve the system. 
 
 What is Props and How to Use it in React
-
+props are arguments passed into react components, via HTML attributes 
 What is “props” short for?
 
 "Props" is short for properties
@@ -80,8 +80,30 @@ const world = {world: "🙂🙃😉😊😇🥰😍🤩!"}
 
 const helloWorld = {...hello,...world}
 console.log(helloWorld) // Object { hello: "😋😛😜🤪😝", world: "🙂🙃😉😊😇🥰😍🤩!" }
+
 Give an example of using the spread operator to add a new item to an array.
+a = {...a, ...theNewItemToAdd}; 
+Object.assign(a, theNewItemsToAdd); 
 Give an example of using the spread operator to combine two objects into one.
+
+let person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 25,
+  ssn: '123-456-7890
+};
+
+let job = {
+  jobTitle: 'Fry-Cook',
+  location: 'McDonalds',
+};
+
+let employee = {
+  ...person,
+  ...job
+};
+
+
 Videos
 How to Pass Functions Between Components
 
@@ -90,3 +112,47 @@ In your own words, what does the increment function do?
 How can you pass a method from a parent component into a child component?
 How does the child component invoke a method that was passed to it from a parent component?
 
+
+
+
+
+day 11
+
+Fill in the chart below with five differences between SQL and NoSQL databases:
+
+SQL	NoSQL
+ 	 SQL databases are vertically scalable while NoSQL databases are horizontaly scalable. SQL is tale based, NoSQL is document, key-value, graph or wide column stores. SQL databases are better for multi row transcactions, while NoSQL is better for unstructured data like docuuments or JSON
+ 	 
+ 	 
+ 	 
+What kind of data is a good fit for an SQL database?
+Give a real world example.
+Keeping track of transaction history. 
+What kind of data is a good fit a NoSQL database?
+Give a real world example.
+any sort of unsctructured data, like perhaps a UL?
+Which type of database is best for hierarchical data storage?
+NoSQL
+Which type of database is best for scalability?
+No SQL, just based on the graph bases. 
+Videos
+sql vs nosql (Video)
+
+What does SQL stand for?
+
+Structured Query Language
+What is a relational database?
+relational databases store and provides access to data points that are related to one another. 
+What type of structure does a relational database work with?
+What is a ‘schema’?
+it is a list of logical structures of data. 
+What is a NoSQL database?
+they are non-tabular databases and store data differently than relational tables. 
+How does it work?
+it allows dev's to store unstrucutred data, giving them a lot of felxibility
+What is inside of a Mongo database?
+BSON docs? Just JSON data turned into a binary form, stored and quiered more effeciently. 
+Which is more flexible - SQL or MongoDB? and why.
+MongoDB is more dlexable and ensures high diverse data availability a SQL operates with the ACID properties, ensuring some greater reliability of transactions. 
+What is the disadvantage of a NoSQL database?
+it doesnt support ACID, and doesnt have reliability functions. 
