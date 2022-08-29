@@ -60,14 +60,26 @@ Strings, numbers, complex objects
 
 Day 3
 What does .map() return?
+returns a map object after the original array has been ran through a function
 If I want to loop through an array and display each value in JSX, how do I do that in React?
-Each list item needs a unique ____.
+const listItems = numbers.map((number) =>
+  <li>{number}</li>
+Each list item needs a unique ____. 
+Key
 What is the purpose of a key?
+Keys help react identift which items have changed, been removed or added. 
 The Spread Operator
 
 What is the spread operator?
+It is a syntax that literally spreads an array into seperate arguments 
 List 4 things that the spread operator can do.
+It can copy arrays, combine them, USe math functions or even use an array as an argument. 
 Give an example of using the spread operator to combine two arrays.
+const hello = {hello: "😋😛😜🤪😝"}
+const world = {world: "🙂🙃😉😊😇🥰😍🤩!"}
+
+const helloWorld = {...hello,...world}
+console.log(helloWorld) // Object { hello: "😋😛😜🤪😝", world: "🙂🙃😉😊😇🥰😍🤩!" }
 Give an example of using the spread operator to add a new item to an array.
 Give an example of using the spread operator to combine two objects into one.
 Videos
@@ -77,3 +89,4 @@ In the video, what is the first step that the developer does to pass functions b
 In your own words, what does the increment function do?
 How can you pass a method from a parent component into a child component?
 How does the child component invoke a method that was passed to it from a parent component?
+
